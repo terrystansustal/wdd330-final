@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | Tech Ops Galaxy</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="images/home/logo.jpg" alt="Logo of Company">
+        </div>
+
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Devices</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slideshow contaienr -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/home/hero-1.jpg" alt="Hero Image" style="max-width: 100%;">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="images/home/hero-2.jpg" alt="Hero Image" style="max-width: 100%;">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="images/home/hero-3.jpg" alt="Hero Image" style="max-width: 100%;">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/home/hero-4.jpg" alt="Hero Image" style="max-width: 100%;">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <main class="main-container">
+        <h2>Free Shipping | Same Day Delivery!</h2>
+
+        <figure>
+            <img src="images/home/laptop-home.jpg" alt="Image of a laptop">
+            <figcaption>Laptops for Sale</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/home/smartphone-home.jpg" alt="Image of a smartphone">
+            <figcaption>Smartphones for Sale</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/ads/deal-of-week.jpg" alt="Image of devices">
+            <figcaption>Click here to see the sweet deals!</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/ads/best-seller.jpg" alt="Image of a smartphone">
+            <figcaption>Check out our Best Seller!</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+
+    </footer>
     
+    <script src="scripts/date.js"></script>
 </body>
 </html>
