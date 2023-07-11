@@ -245,6 +245,53 @@ nav ul.open {
   to {opacity: 1}
 }
 
+.main-container {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "heading"
+    "deal"
+    "best-seller"
+    "laptop"
+    "smartphone";
+    gap: 20px;
+}
+
+.main-container figure img{
+    max-width: 100%;
+}
+
+.main-container h2 {
+    grid-area: heading;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fig-best-deal {
+    grid-area: deal;
+}
+
+.fig-best-seller {
+    grid-area: best-seller;
+}
+
+.fig-laptop {
+    grid-area: laptop;
+}
+
+.fig-smartphone {
+    grid-area: smartphone;
+}
+
+.fig-best-deal, .fig-best-seller, .fig-laptop, .fig-smartphone {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
 @media only screen and (min-width:760px) {
     
     .r-footer > * {
