@@ -65,7 +65,7 @@ nav ul li a {
 }
 
 nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(89, 131, 146, 0.6);
     color: white;
 }
 
@@ -204,7 +204,7 @@ nav ul.open {
     color: white;
     font-size: 20px;
     text-align: center;
-    background-color: rgba(128, 128, 128, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Next & previous buttons */
@@ -292,11 +292,13 @@ nav ul.open {
     "best-seller"
     "laptop"
     "smartphone";
-    gap: 20px;
+    gap: 50px;
 }
 
 .main-container figure img{
     max-width: 100%;
+    border: 3px black solid;
+    border-radius: 10px;
 }
 
 .main-container h2 {
@@ -328,7 +330,9 @@ nav ul.open {
     color: black;
 }
 
-@media only screen and (min-width:760px) {
+@media only screen and (min-width:768px) {
+
+    /* Footer CSS - Medium View -------------------------------- */
     
     .r-footer > * {
         flex: 1;
@@ -338,11 +342,127 @@ nav ul.open {
         flex-grow: 2;
     }
 
+    .h-box img {
+        max-width: 100%;
+    }
+
+    .h-box {
+        column-count: 3;
+        column-gap: 1.25em;
+    }
+
     .l-footer {
         flex: 1 0px;
     }
 
     .r-footer {
+        flex: 2 0px;
+    }
+
+    /* Home page - Medium View ----------------------- */
+
+    .hero-h {
+        width: auto;
+        color: white;
+        font-size: 32px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 10px;
+    }
+
+    .main-container h2 {
+        font-size: 30px;
+    }
+
+    .main-container figcaption {
+        margin-top: 8px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    nav {
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0 20px;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    nav ul li.active {
+        background-color: #598392 ;
+        color: white;
+    }
+
+    /* Hide the hamburger button on large view */
+    nav button {
+        display: none;
+    }
+    
+    /* This will allow to display the Nav bar */
+    nav ul#primaryNav {
+        display: flex;
+    }
+
+    /* Home page - Large View ----------------------- */
+
+    .main-container {
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: 0.2px 1fr 0.2px 1fr 0.2px;
+        grid-template-rows: auto;
+        grid-template-areas:
+        ". heading heading heading ."
+        ". laptop . smartphone ."
+        ". deal . best-seller .";
+        gap: 50px;
+    }
+
+    .main-container img {
+        transition: transform .3s;
+        transform: scale(1);
+    }
+
+    .main-container img:hover {
+        transform: scale(1.1);
+    }
+
+    .main-container figcaption {
+        margin-top: 25px;
+        font-size: 24px;
+    }
+
+    /* Footer CSS - Medium View -------------------------------- */
+    .r-footer > * {
+        flex: 1;
+    }
+
+    .social-media {
+        flex-grow: 2;
+    }
+
+    .h-box img {
+        max-width: 50%;
+    }
+
+    .h-box {
+        column-count: 3;
+        column-gap: 1.25em;
+    }
+
+    .l-footer {
+        flex: none;
+    }
+
+    .l-footer img {
+        max-width: 50%;
+    }
+
+    .r-footer {
+        text-align: center;
         flex: 2 0px;
     }
 }
