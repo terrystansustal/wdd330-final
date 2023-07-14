@@ -24,14 +24,19 @@
     </header>
 
     <main class="about-us-container">
-        <aside class="ceo-description">
+
+        <section>
+            <h1>About Us</h1>
+        </section>
+
+        <aside class="ceo-image">
             <figure>
                 <img src="images/about-us/ceo.jpg" alt="CEO of company">
                 <figcaption>CEO - Ethan Reynolds</figcaption>
             </figure>
         </aside>
 
-        <div>
+        <div class="ceo-description">
             <p>In the vast expanse of the digital universe, there emerged a visionary CEO named Ethan Reynolds, a true pioneer in the realm of technology.
             With a burning passion and unyielding determination, he embarked on a remarkable journey to establish a company that would reshape the landscape of online retail.
             Thus, Tech Ops Galaxy came into existence, a celestial entity specializing in the sale of laptops and smartphones.
@@ -105,7 +110,19 @@
             </p>
         </figure>
 
-        <!-- DO CONTACT US -->
+        <section class="sbt-form">
+            <h2>Contact Us</h2>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <label class="top" name="fname">First name<input type="text" required></label>
+                    <label class="top" name="lname">Last name<input type="text" required></label>
+                    <label class="top" name="email">Email<input type="email" required></label>
+                    <label class="top" name="phoneNum">Phone number<input type="tel"></label>
+                </fieldset>
+                <input class="submitBtn" type="submit" value="submit">
+            </form>
+        </section>
     </main>
 
     <footer class="footer">
@@ -138,7 +155,6 @@
         </div>
     </footer>
     
-    <script src="scripts/slideshow.js"></script>
     <script src="scripts/hamburger.js"></script>
 
 </body>
