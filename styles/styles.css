@@ -449,6 +449,81 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
+/* Devices page - Mobile View ----------------------- */
+
+.laptops img, .smartphones img {
+    max-width: 100%;
+}
+
+.card {
+    border: 1px solid #01161E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #124559;
+    width: 100%;
+    font-size: 16px;
+}
+
+.card button:hover {
+    opacity: 0.9;
+}
+
+.device-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "heading"
+    "lp-heading"
+    "laptops"
+    "sp-heading"
+    "smartphones";
+    gap: 30px;
+}
+
+.device-container h1 {
+    grid-area: heading;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.lp-heading {
+    grid-area: lp-heading;
+    text-align: center;
+}
+
+.laptops {
+    grid-area: laptops;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.sp-heading {
+    grid-area: sp-heading;
+    text-align: center;
+}
+
+.smartphones {
+    grid-area: smartphones;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+
+
 @media only screen and (min-width:768px) {
 
     /* Footer CSS - Medium View -------------------------------- */
@@ -497,6 +572,24 @@ form input.submitBtn {
     .main-container figcaption {
         margin-top: 8px;
         font-size: 24px;
+    }
+
+    /* Devices page - Medium View ----------------------- */
+
+    .card {
+        max-width: 600px;
+    }
+
+    .device-container h1 {
+        font-size: 32px;
+    }
+
+    .laptops {
+        gap: 50px;
+    }
+
+    .smartphones {
+        gap: 50px;
     }
 }
 
@@ -618,5 +711,25 @@ form input.submitBtn {
         font-size: 32px;
         width: max-content;
         margin-left: 50px;
+    }
+
+    /* Devices page - Medium View ----------------------- */
+
+    .card {
+        max-width: 600px;
+    }
+
+    .device-container h1 {
+        font-size: 32px;
+    }
+
+    .laptops {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .smartphones {
+        flex-direction: row;
+        gap: 50px;
     }
 }
