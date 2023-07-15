@@ -381,6 +381,7 @@ nav li img {
 .ceo-description {
     grid-area: ceo-description;
     text-indent: 2em;
+    line-height: 1.5em;
     margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -407,6 +408,7 @@ nav li img {
 
 .our-story p, .delivery p, .vision p {
     text-indent: 2em;
+    line-height: 1.5em;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
