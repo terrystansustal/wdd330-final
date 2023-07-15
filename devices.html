@@ -18,7 +18,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li class="active"><a href="devices.html">Devices</a></li>
-                <li><a href="#">Cart</a></li>
+                <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
     </header>
@@ -32,22 +32,22 @@
             <div class="card">
                 <img src="images/laptops/laptop-1.jpg" alt="Image of laptop">
                 <h3>Macbook Fake 1</h3>
-                <p>Price: $599.99</p>
-                <p><a href="#"><button>Add to Cart</button></a></p>
+                <p class="price-p">Price: $599.99</p>
+                <p><a href="#" onclick="addToCart('Macbook Fake 1', '$599.99', 'images/laptops/laptop-1.jpg')"><button>Add to Cart</button></a></p>
             </div>
 
             <div class="card">
                 <img src="images/laptops/laptop-2.jpg" alt="Image of laptop">
                 <h3>Macbook Fake 2</h3>
-                <p>Price: $799.99</p>
-                <p><a href="#"><button>Add to Cart</button></a></p>
+                <p class="price-p">Price: $799.99</p>
+                <p><a href="#" onclick="addToCart('Macbook Fake 2', '$799.99', 'images/laptops/laptop-2.jpg')"><button>Add to Cart</button></a></p>
             </div>
 
             <div class="card">
                 <img src="images/laptops/laptop-3.jpg" alt="Image of laptop">
                 <h3>Macbook Fake 3</h3>
-                <p>Price: $1,099.99</p>
-                <p><a href="#"><button>Add to Cart</button></a></p>
+                <p class="price-p">Price: $1,099.99</p>
+                <p><a href="#" onclick="addToCart('Macbook Fake 3', '$1,099.99', 'images/laptops/laptop-3.jpg')"><button>Add to Cart</button></a></p>
             </div>
         </section>
 
@@ -55,24 +55,24 @@
         <section class="smartphones">
             
             <div class="card">
-                <img src="images/smartphones/smartphone-1.jpg" alt="Image of smartphone">
+                <img src="images/smartphones/sp-1.jpg" alt="Image of smartphone">
                 <h3>Samsung Fake 1</h3>
-                <p>Price: $699.99</p>
-                <p><a href="#"><button>Add to Cart</button></a></p>
+                <p class="price-p">Price: $699.99</p>
+                <p><a href="#" onclick="addToCart('Samsung Fake 1', '$699.99', 'images/smartphones/sp-1.jpg')"><button>Add to Cart</button></a></p>
             </div>
 
             <div class="card">
-                <img src="images/smartphones/smartphone-2.jpg" alt="Image of smartphone">
+                <img src="images/smartphones/sp-2.jpg" alt="Image of smartphone">
                 <h3>Samsung Fake 2</h3>
-                <p>Price: $999.99</p>
-                <p><a href="#"><button>Add to Cart</button></a></p>
+                <p class="price-p">Price: $999.99</p>
+                <p><a href="#" onclick="addToCart('Samsung Fake 2', '$999.99', 'images/smartphones/sp-2.jpg')"><button>Add to Cart</button></a></p>
             </div>
 
             <div class="card">
-                <img src="images/smartphones/smartphone-3.jpg" alt="Image of smartphone">
+                <img src="images/smartphones/sp-3.jpg" alt="Image of smartphone">
                 <h3>Samsung Fake 9</h3>
-                <p>Price: $1,299.99</p>
-                <p><a href="#"><button>Add to Cart</button></a></p>
+                <p class="price-p">Price: $1,299.99</p>
+                <p><a href="#" onclick="addToCart('Samsung Fake 3', '$1,299.99', 'images/smartphones/sp-3.jpg')"><button>Add to Cart</button></a></p>
             </div>
         </section>
     </main>
@@ -107,6 +107,7 @@
         </div>
     </footer>
     
+    <script src="scripts/addToCart.js"></script>
     <script src="scripts/hamburger.js"></script>
 
 </body>
