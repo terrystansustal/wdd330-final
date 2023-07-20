@@ -29,7 +29,7 @@ function addToCart(itemName, itemPrice, itemImage) {
   
     // Refresh the page to update the cart display
     location.reload();
-  }
+}
 
 function removeItemFromCart(index) {
     // Retrieve the cart items from sessionStorage
@@ -96,7 +96,7 @@ function displayCart() {
       // Display the total cost in the HTML element with the id 'cartTotal'
       document.getElementById('cartTotal').innerHTML = "Total Cost: $" + totalCost.toFixed(2);
     }
-  }
+}
 
 function checkout(event) {
   event.preventDefault();
