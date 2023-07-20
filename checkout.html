@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | Tech Ops Galaxy</title>
+    <title>Check Out | Tech Ops Galaxy</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body onload="displayCart()">
@@ -18,22 +18,30 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="devices.html">Devices</a></li>
-                <li class="active"><a href="cart.html">Cart</a></li>
+                <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="cart-container">
-        <h1>Your Cart</h2>
-        <div class="shopping-card">
-            <div id="cartItems"></div>
-            <div id="totalItems">Total Items: <span id="itemCount">0</span></div>
-            <hr>
-            <div id="cartTotal"></div>
-            <!-- <a href="checkout.html"><button id="checkoutBtn" onclick="checkout()">Checkout</button></a> -->
-            <a href="checkout.html"><button>Checkout</button></a>
+    <main class="checkout-container">
+        <h1>Checkout</h2>
 
-        </div>
+            <form action="#" method="get" onsubmit="checkout(event)">
+                <fieldset>
+                    <label class="top" name="fname">First name<input type="text" required></label>
+                    <label class="top" name="lname">Last name<input type="text" required></label>
+                    <label class="top" name="address-line1">Address Line 1<input type="text" placeholder="Street address" required></label>
+                    <label class="top" name="address-line2">Address Line 2<input type="text" placeholder="Apartment, suite, unit, bulding, floor, etc." required></label>
+                    <label class="top" name="city">City<input type="text" required></label>
+                    <label class="top" name="state">State<input type="text" required></label>
+                    <label class="top" name="zipcode">zipcode<input type="number"></label>
+                    <label class="top" name="country">Country<input type="text"></label>
+                    <label class="top" name="email">Email<input type="email" required></label>
+                    <label class="top" name="phoneNum">Phone number<input type="tel" required></label>
+                </fieldset>
+                <input class="submit-order" id="purchase" type="submit" value="submit"></input>
+            </form>
+        
     </main>
 
     <footer class="footer">
